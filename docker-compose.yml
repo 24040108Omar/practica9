@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        REPO_URL: https://github.com/USUARIO/REPO.git
+        BRANCH: main
+        APP_DIR: .
+    image: mi-practica-docker:latest
+    container_name: mi-practica-docker
+    ports:
+      - "8080:80"
+    restart: unless-stopped
