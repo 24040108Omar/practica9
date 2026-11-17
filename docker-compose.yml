@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
       args:
         REPO_URL: https://github.com/24040100GabinoM/Equipo4-Curso-Ing.git
-        BRANCH: angular-20
+        BRANCH: main
         APP_DIR: .
     image: mi-practica-docker:latest
     container_name: mi-practica-docker
