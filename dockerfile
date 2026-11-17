@@ -17,7 +17,7 @@ RUN npm run build
 
 RUN mkdir -p /output \
   && cp -r dist/*/browser/. /output/ \
-  && for d in Gabino Mariana Oscar_Guardiola omar; do \
+  && for d in Gabino Mariana Oscar_Guardiola omar sobremi; do \
        if [ -d "/repo/$d" ]; then cp -r "/repo/$d" /output/; fi; \
      done \
   && ls -R /output
